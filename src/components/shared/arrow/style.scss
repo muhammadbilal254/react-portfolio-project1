@@ -1,0 +1,15 @@
+@import "../../../style-config/variable.scss";
+
+.arrow-icon {
+  width: 21px;
+  height: 21px;
+  border-radius: 41px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $yellow;
+  svg {
+    transform: rotate(-45deg);
+  }
+}
