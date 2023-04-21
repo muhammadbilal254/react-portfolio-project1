@@ -16,10 +16,22 @@
   overflow: hidden;
   @include typography(18px, 400, 1);
   .text,
+  .icon,
   .arrow-icon {
     position: relative;
     z-index: 1;
     transition: all ease 500ms;
+  }
+  .icon {
+    width: 21px;
+    height: 21px;
+    background: $yellow;
+    border-radius: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    font-size: 12px;
   }
   &:before {
     content: "";
@@ -37,7 +49,8 @@
       transform: translateX(0%);
     }
 
-    .arrow-icon {
+    .arrow-icon,
+    .icon {
       background-color: $white;
     }
   }
