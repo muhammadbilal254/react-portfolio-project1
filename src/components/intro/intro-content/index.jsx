@@ -6,6 +6,7 @@ import "./style.scss";
 import hand from "../../../images/hand.png";
 import girl from "../../../images/girl.png";
 import CallToAction from "../../shared/CallToAction";
+import { scrollToSection } from "../../utils/helper";
 
 const IntroContent = () => {
   return (
@@ -26,7 +27,10 @@ const IntroContent = () => {
             A frontend Web application with more than one year of Expirence. I
             am working with Reactjs, twilwind css and many more tools.
           </p>
-          <CallToAction text={"Contact US"} />
+          <CallToAction
+            text={"Contact US"}
+            action={() => scrollToSection("contact")}
+          />
         </div>
         <div className="right-col">
           <img src={girl} alt="Girl" />

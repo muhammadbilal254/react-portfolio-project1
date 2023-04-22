@@ -93,7 +93,7 @@ const Portfolio = () => {
   };
 
   return (
-    <Section id={"portflio"} title={"Check My Portfolio"} background={"light"}>
+    <Section id={"portfolio"} title={"Check My Portfolio"} background={"light"}>
       <div className="portfolio-content-wrapper">
         <Filter filterProjects={(tag) => filterProjects(tag)} />
         <Showcase data={projects} transition={transition} />
